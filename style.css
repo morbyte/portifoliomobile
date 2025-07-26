@@ -17,7 +17,7 @@ body {
   padding: 0;
 }
 h2 {
-  color: var(--subtitulos);
+  color: var(--titulos);
 }
 .container {
   width: 100%;
@@ -64,6 +64,13 @@ header img {
 header h2 {
   color: var(--subtitulos);
 }
+.conteudo-secoes {
+  background: rgba(255, 255, 255, 0.2); /* fundo semitransparente */
+  backdrop-filter: blur(10px); /* desfoque do que está atrás */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
+  border-radius: 1rem;
+  padding: 1rem;
+}
 section {
   margin-bottom: 2rem;
 }
@@ -76,7 +83,7 @@ section.sobre p {
   color: black;
   text-align: justify;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .skills ul {
@@ -89,6 +96,36 @@ section.sobre p {
   font-size: 1.2rem;
   color: black;
   font-weight: 500;
+}
+
+.formacao {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
+  color: #000;
+}
+
+.formacao h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--titulos);
+}
+
+.formacao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.formacao li {
+  font-size: 1.2rem;
+  color: black;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .boxButton {
@@ -117,7 +154,7 @@ section.sobre p {
   color: var(--titulos);
 }
 .btn.linkedin {
-  bbackground: linear-gradient(45deg, #0077b5, #0057a8);
+  background: linear-gradient(45deg, #0077b5, #0057a8);
 }
 .btn.Instagram {
   background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
@@ -147,6 +184,9 @@ footer {
 @media (max-width: 360px) {
   section.sobre p {
     font-size: 1rem;
+  }
+  header h2 {
+    font-size: 1.1rem;
   }
 
   button {
