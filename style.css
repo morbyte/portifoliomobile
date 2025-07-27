@@ -185,7 +185,7 @@ footer {
 
 @media (max-width: 360px) {
   .container {
-    padding: 0.5rem;
+    padding: 1.5rem;
   }
   h2,
   h1 {
