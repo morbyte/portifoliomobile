@@ -165,7 +165,8 @@ section.sobre p {
   background: linear-gradient(45deg, #25d366, #128c7e);
 }
 .qrcode {
-  width: 3rem;
+  width: 2rem;
+  object-fit: fill;
 }
 
 footer {
