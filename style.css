@@ -84,6 +84,7 @@ section.sobre p {
   text-align: justify;
   line-height: 1.5;
   font-weight: 500;
+  word-break: break-word;
 }
 
 .skills ul {
@@ -132,6 +133,7 @@ section.sobre p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 .btn {
   display: block;
@@ -143,7 +145,7 @@ section.sobre p {
   background-color: var(--subtitulos);
   color: #f0f2f5;
   text-decoration: none;
-  /* max-width: 320px; */
+  /* max-width: 250px; */
   width: 100%;
   transition: all 0.3s ease;
 }
@@ -182,20 +184,35 @@ footer {
 }
 
 @media (max-width: 360px) {
-  section.sobre p {
-    font-size: 1rem;
+  .container {
+    padding: 0.5rem;
+  }
+  h2,
+  h1 {
+    font-size: 1.5rem;
+  }
+  header img {
+    width: 8rem;
+    height: 8rem;
   }
   header h2 {
     font-size: 1.1rem;
   }
-
+  section.sobre p {
+    font-size: 1rem;
+  }
   button {
     font-size: 1.2rem;
     padding: 0.6rem 1.5rem;
   }
-
-  header img {
-    width: 8rem;
-    height: 8rem;
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
+  .skills li {
+    font-size: 1rem;
+  }
+  .formacao li {
+    font-size: 1rem;
   }
 }
